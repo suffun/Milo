@@ -1,4 +1,4 @@
-import { Schema } from "mongoose";
+import mongoose, { Schema } from "mongoose";
 
 const userSchema = new Schema({
     user_id :{
@@ -15,6 +15,6 @@ const userSchema = new Schema({
     }
 })
 
-const meeting = mongoose.model("Meeting",userSchema);
+const Meeting = mongoose.model("Meeting",userSchema);
 
 export {Meeting};
